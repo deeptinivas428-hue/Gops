@@ -1,0 +1,372 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #050505;
+    color: white;
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+
+/* =====================
+   PAGE SYSTEM
+===================== */
+
+.page {
+    min-height: 100vh;
+    padding: 60px 25px;
+
+    display: none;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #300006,
+            #0b0000 45%,
+            #050505 80%
+        );
+}
+
+.page.active {
+    display: flex;
+}
+
+
+/* =====================
+   TEXT
+===================== */
+
+h1 {
+    font-size: 58px;
+    color: #ff1f3d;
+
+    text-shadow:
+        0 0 10px #ff1f3d,
+        0 0 30px #990019;
+}
+
+h2 {
+    font-size: 42px;
+    color: #ff1f3d;
+
+    text-shadow:
+        0 0 10px #ff1f3d;
+}
+
+h3 {
+    color: #ff5269;
+}
+
+p {
+    max-width: 700px;
+
+    font-size: 19px;
+    line-height: 1.8;
+
+    color: #ffe3e7;
+}
+
+
+/* =====================
+   BUTTONS
+===================== */
+
+button {
+    margin-top: 35px;
+
+    padding: 16px 30px;
+
+    border: 2px solid #ff1f3d;
+    border-radius: 30px;
+
+    background: #a8001b;
+
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 15px rgba(255, 0, 40, 0.3);
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+
+    background: #ff1f3d;
+
+    box-shadow:
+        0 0 25px #ff1f3d;
+}
+
+
+/* =====================
+   WELCOME
+===================== */
+
+.spider {
+    font-size: 75px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================
+   HEART
+===================== */
+
+.heart {
+    font-size: 70px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+
+/* =====================
+   LETTER
+===================== */
+
+.letter {
+    max-width: 750px;
+
+    padding: 40px;
+
+    background: #110507;
+
+    border: 1px solid #8f0018;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 30px rgba(255, 0, 40, 0.2);
+}
+
+
+/* =====================
+   GALLERY
+===================== */
+
+.gallery {
+    width: 100%;
+    max-width: 1050px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.photo {
+    padding: 12px;
+
+    background: #100607;
+
+    border: 1px solid #8f0018;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.photo:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 40, 0.35);
+}
+
+.photo img {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+.photo p {
+    font-size: 16px;
+}
+
+
+/* =====================
+   LOVE CARDS
+===================== */
+
+.love-grid {
+    max-width: 900px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.love-card {
+    padding: 25px;
+
+    background: #100607;
+
+    border: 1px solid #8f0018;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.love-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 0 25px rgba(255, 0, 40, 0.3);
+}
+
+.love-card div {
+    font-size: 40px;
+}
+
+
+/* =====================
+   DREAM GALLERY
+===================== */
+
+.dream-gallery {
+    width: 100%;
+    max-width: 1050px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.dream-card {
+    padding: 12px;
+
+    background: #100607;
+
+    border: 1px solid #8f0018;
+
+    border-radius: 20px;
+}
+
+.dream-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+}
+
+
+/* =====================
+   FINAL PAGE
+===================== */
+
+.final {
+    background:
+        radial-gradient(
+            circle,
+            #45000b,
+            #080000 50%,
+            #020202
+        );
+}
+
+.big-heart {
+    font-size: 90px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+.final-text {
+    font-size: 21px;
+}
+
+.final-box {
+    margin-top: 30px;
+
+    padding: 25px 40px;
+
+    border: 1px solid #ff1f3d;
+
+    border-radius: 25px;
+
+    color: #ffadb8;
+
+    box-shadow:
+        0 0 30px rgba(255, 0, 40, 0.25);
+}
+
+
+/* =====================
+   MOBILE
+===================== */
+
+@media (max-width: 700px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .gallery,
+    .love-grid,
+    .dream-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .photo img,
+    .dream-card img {
+        height: 280px;
+    }
+
+    .letter {
+        padding: 25px;
+    }
+
+}
